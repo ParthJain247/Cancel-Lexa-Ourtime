@@ -1,0 +1,25 @@
+.box {
+    position: relative;
+    
+  }
+  
+  .pencil {
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    animation: hoverAnimation 2s linear infinite;
+  }
+  
+  @keyframes hoverAnimation {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }

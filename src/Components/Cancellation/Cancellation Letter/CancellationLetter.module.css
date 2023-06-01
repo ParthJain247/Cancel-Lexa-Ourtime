@@ -1,0 +1,37 @@
+.img{width:5vw;
+    position:absolute;
+    right:-1vw;
+    top:-2vw;
+    animation: imageAnimation 2s ease-in-out infinite;
+    transform: rotate(15deg);
+}
+
+@keyframes imageAnimation {
+    0% {
+      transform: scale(1) rotate(15deg); 
+    }
+    50% {
+      transform: scale(1.1) rotate(15deg); 
+    }
+    100% {
+      transform: scale(1) rotate(15deg); 
+    }
+  }
+
+ 
+
+
+@media (max-width: 630px) {
+    .img {
+      width: 8vw;
+      top:-1%;
+    }
+  }
+
+
+  @media (max-width: 360px) {
+    .img {
+      width: 10vw;
+      top:-0.8%;
+    }
+  }
